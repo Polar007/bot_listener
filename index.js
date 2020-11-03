@@ -5,6 +5,8 @@ const transmit = "transmit"
 const recieve = "recieve"
 const end = "end"
 
+client.login(process.env.TOKEN);
+
 client.once('ready', () => {
     console.log('Ready!');
 });
@@ -67,7 +69,6 @@ async function end_broadcast() {
     r_connection.disconnect;
 }
 
-client.login(process.env.TOKEN);
 © 2020 GitHub, Inc.
 Terms
 Privacy
