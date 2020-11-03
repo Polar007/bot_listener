@@ -67,7 +67,7 @@ async function end_broadcast() {
     r_connection.disconnect;
 }
 
-client.login(process.env.token);
+client.login(process.env.TOKEN);
 © 2020 GitHub, Inc.
 Terms
 Privacy
