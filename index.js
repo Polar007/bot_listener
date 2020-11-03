@@ -1,5 +1,9 @@
 const client = new Discord.Client();
-const {prefix, token, help, transmit, recieve, end} = require('./config.json');
+const prefix = "!listen "
+const help = "help"
+const transmit = "transmit"
+const recieve = "recieve"
+const end = "end"
 
 client.once('ready', () => {
     console.log('Ready!');
@@ -63,7 +67,7 @@ async function end_broadcast() {
     r_connection.disconnect;
 }
 
-client.login(token);
+client.login(process.env.token);
 © 2020 GitHub, Inc.
 Terms
 Privacy
